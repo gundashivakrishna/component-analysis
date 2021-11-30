@@ -484,7 +484,7 @@ void fld(int no_classes,int no_fields, char* fname, char* fname1){
 
 
 void metric_learning(int no_classes, int no_fields, char* fname, char* fname1){
-   // START OF RAO'S CODE
+   
 
 	float sum_S[20][20],sum_D[20][20],sigma_S[20][20],sigma_D[20][20];
 	float M[no_fields-1][no_fields-1];
@@ -539,7 +539,7 @@ void metric_learning(int no_classes, int no_fields, char* fname, char* fname1){
 			}
 		}
 	}
-    //END OF RAO's CODE
+   
 
 	// CALCULATING SIGMA S
 	float data_subset[MROW][no_fields-1];
@@ -859,34 +859,4 @@ int main(int argc,char* argv[]){
 	
 
 	
-	/*int no_classes,no_fields;
-	printf("Please input no. of Classes: \n");
-	scanf("%d",&no_classes);
-	printf("Please input no. of Fields(incuding Class): \n");
-	scanf("%d",&no_fields);
-	N=no_fields-1;*/
-	//pca(no_classes,no_fields,argv[1],argv[2]);
-	//fld(no_classes,no_fields,argv[1],argv[2]);
-	//metric_learning(no_classes,no_fields,argv[1],argv[2]);
-	//fld(2,5,"transfusion.data","resul");
-
-	//Sample test case for testing inverse calculator functions
-	/*
-	N=4;
-	float A[4][4]={ {5, -2, 2, 7}, 
-                    {1, 0, 0, 3}, 
-                    {-3, 1, 5, 0}, 
-                    {3, -1, -9, 4}};
-	float inv[4][4];
-	inverse(A,inv);
-	for(int i=0;i<4;i++){
-		printf("%f  %f  %f  %f\n",inv[i][0],inv[i][1],inv[i][2],inv[i][3]);
-	}*/
-	//Sample test case for testing inverse calculator functions
-	/*N=3;
-	float A[3][3]={{1,2,3},{1,1,1},{1,1,1}};
-	float eigenvec[3]={1,1,1};
-	eigen(A,eigenvec);
-	printf("%f  %f  %f\n",eigenvec[0],eigenvec[1],eigenvec[2]);
-	return 0;*/
-}
+	
